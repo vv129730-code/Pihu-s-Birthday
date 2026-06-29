@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8c8dc" />
+  <title>Pihu's 1st Birthday Party</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" aria-label="Loading invitation">
+    <div class="loader-crown">♕</div>
+    <p>Opening Pihu's fairy tale...</p>
+  </div>
+
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+  <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+
+  <div class="magic-cursor" aria-hidden="true"></div>
+  <div class="dark-veil" aria-hidden="true"></div>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="castle">🏰</div>
+    <div class="cloud cloud-one"></div>
+    <div class="cloud cloud-two"></div>
+    <div class="cloud cloud-three"></div>
+    <div class="blob blob-one"></div>
+    <div class="blob blob-two"></div>
+    <div class="happy-float">Happy Birthday</div>
+    <div class="gift-box">🎁</div>
+    <div class="butterfly butterfly-one">🦋</div>
+    <div class="butterfly butterfly-two">🦋</div>
+    <div class="butterfly butterfly-three">🦋</div>
+    <div class="balloon balloon-one" role="button" tabindex="0">🎈</div>
+    <div class="balloon balloon-two" role="button" tabindex="0">🎈</div>
+    <div class="balloon balloon-three" role="button" tabindex="0">🎈</div>
+    <div class="hearts"></div>
+    <div class="flowers"></div>
+    <div class="sparkles"></div>
+    <div class="bubbles"></div>
+  </div>
+
+  <button class="music-toggle" type="button" aria-pressed="false" aria-label="Toggle background music">
+    <span class="music-icon">♪</span>
+  </button>
+
+  <main class="page-shell">
+    <!-- Hero Banner -->
+    <section class="hero section-reveal" id="home">
+      <div class="fairy-particles" aria-hidden="true"></div>
+      <p class="eyebrow">✨ You're Invited ✨</p>
+      <div class="portrait-wrap">
+        <img
+          class="hero-photo"
+          src="assets/pihu-portrait.jpg"
+          data-fallback="assets/photo-placeholder.svg"
+          alt="Pihu smiling"
+          loading="eager"
+        />
+      </div>
+      <p class="child-name">Pihu <span>(Ishika)</span></p>
+      <h1>Pihu's 1st Birthday Party</h1>
+      <p class="tagline">Come and Celebrate With Us ❤️</p>
+
+      <div class="countdown mini-countdown" data-countdown aria-label="Birthday countdown">
+        <div><strong data-days>00</strong><span>Days</span></div>
+        <div><strong data-hours>00</strong><span>Hours</span></div>
+        <div><strong data-minutes>00</strong><span>Minutes</span></div>
+        <div><strong data-seconds>00</strong><span>Seconds</span></div>
+      </div>
+
+      <a class="primary-button" href="#rsvp">Join Celebration</a>
+    </section>
+
+    <!-- Birthday Details -->
+    <section class="details-grid section-reveal" aria-labelledby="details-title">
+      <div class="section-heading">
+        <span>Royal Invite</span>
+        <h2 id="details-title">Birthday Details</h2>
+      </div>
+      <article class="detail-card">
+        <span class="detail-icon">📅</span>
+        <p>Date</p>
+        <strong>Thursday, July 09, 2026</strong>
+      </article>
+      <article class="detail-card">
+        <span class="detail-icon">🕖</span>
+        <p>Time</p>
+        <strong>7:00 PM</strong>
+      </article>
+      <article class="detail-card">
+        <span class="detail-icon">🏰</span>
+        <p>Venue</p>
+        <strong>Nani's House (Sarai)</strong>
+      </article>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery section-reveal" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <span>Tiny Princess Moments</span>
+        <h2 id="gallery-title">Pihu's Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <button class="photo-card" type="button">
+          <img src="assets/pihu-gallery-1.jpg" data-fallback="assets/photo-placeholder.svg" alt="Pihu gallery photo 1" loading="lazy" />
+        </button>
+        <button class="photo-card" type="button">
+          <img src="assets/pihu-gallery-2.jpg" data-fallback="assets/photo-placeholder.svg" alt="Pihu gallery photo 2" loading="lazy" />
+        </button>
+        <button class="photo-card" type="button">
+          <img src="assets/pihu-gallery-3.jpg" data-fallback="assets/photo-placeholder.svg" alt="Pihu gallery photo 3" loading="lazy" />
+        </button>
+        <button class="photo-card" type="button">
+          <img src="assets/pihu-gallery-4.jpg" data-fallback="assets/photo-placeholder.svg" alt="Pihu gallery photo 4" loading="lazy" />
+        </button>
+      </div>
+    </section>
+
+    <!-- Parents Message -->
+    <section class="message section-reveal" aria-labelledby="message-title">
+      <div class="message-photo">
+        <img src="assets/pihu-gallery-5.jpg" data-fallback="assets/photo-placeholder.svg" alt="Pihu birthday portrait" loading="lazy" />
+      </div>
+      <div>
+        <div class="section-heading align-left">
+          <span>With Love</span>
+          <h2 id="message-title">Parents Message</h2>
+        </div>
+        <p>
+          Our little princess Pihu is turning one, and our hearts are full of joy.
+          Please bless her with your love, laughter, and warm wishes as we celebrate
+          her first magical year.
+        </p>
+      </div>
+    </section>
+
+    <!-- Event Countdown -->
+    <section class="event-count section-reveal" aria-labelledby="countdown-title">
+      <div class="section-heading">
+        <span>Almost Time</span>
+        <h2 id="countdown-title">Event Countdown</h2>
+      </div>
+      <div class="countdown large-countdown" data-countdown>
+        <div><strong data-days>00</strong><span>Days</span></div>
+        <div><strong data-hours>00</strong><span>Hours</span></div>
+        <div><strong data-minutes>00</strong><span>Minutes</span></div>
+        <div><strong data-seconds>00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location section-reveal" aria-labelledby="location-title">
+      <div class="section-heading">
+        <span>Find The Castle</span>
+        <h2 id="location-title">Location</h2>
+      </div>
+      <div class="location-card">
+        <div class="map-art" aria-hidden="true">📍</div>
+        <p>Nani's House (Sarai)</p>
+        <div class="button-row">
+          <a class="ghost-button" href="https://www.google.com/maps/search/?api=1&query=Nani%27s%20House%20Sarai" target="_blank" rel="noopener">Google Maps</a>
+          <a class="primary-button compact" href="https://www.google.com/maps/dir/?api=1&destination=Nani%27s%20House%20Sarai" target="_blank" rel="noopener">Navigate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp section-reveal" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="section-heading">
+        <span>Say Yes</span>
+        <h2 id="rsvp-title">RSVP</h2>
+      </div>
+      <form class="rsvp-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+        </label>
+        <label>
+          <span>Phone</span>
+          <input type="tel" name="phone" autocomplete="tel" placeholder="Your phone number" required />
+        </label>
+        <label>
+          <span>Will you attend?</span>
+          <select name="attending" required>
+            <option value="">Choose one</option>
+            <option>Yes, with joy</option>
+            <option>Sorry, can't attend</option>
+          </select>
+        </label>
+        <button class="primary-button form-submit" type="submit">Submit RSVP</button>
+        <p class="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for Pihu</p>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Photo preview">
+    <button class="lightbox-close" type="button" aria-label="Close photo preview">×</button>
+    <img src="" alt="Pihu photo preview" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
