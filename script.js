@@ -1,5 +1,5 @@
 const birthdayDate = new Date("2026-07-09T19:00:00+05:30").getTime();
-const fallbackImage = "pihu3 (2).jpeg";
+
 
 const body = document.body;
 const countdownGroups = document.querySelectorAll("[data-countdown]");
