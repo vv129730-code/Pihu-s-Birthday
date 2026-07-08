@@ -679,17 +679,50 @@ h2 {
   background: rgba(255, 255, 255, 0.48);
 }
 
-.map-art {
-  width: 82px;
-  height: 82px;
-  display: grid;
-  place-items: center;
-  margin: 0 auto 12px;
-  border-radius: 50%;
-  font-size: 2.4rem;
-  background: linear-gradient(135deg, #bdeaff, #fff6df);
-  box-shadow: 0 14px 35px rgba(96, 123, 169, 0.22);
+<section class="location section-reveal" aria-labelledby="location-title">
+  <div class="section-heading">
+    <span>Find The Castle</span>
+    <h2 id="location-title">Location</h2>
+  </div>
+
+  <div class="location-card">
+
+    <iframe
+      src="https://www.google.com/maps?q=26.4772299,80.293848&z=16&output=embed"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <p>Birthday Venue</p>
+
+    <div class="button-row">
+      <a class="ghost-button"
+         href="https://maps.app.goo.gl/RPZ4mEfTzrnr6QPt9"
+         target="_blank"
+         rel="noopener">Google Maps</a>
+
+      <a class="primary-button compact"
+         href="https://maps.app.goo.gl/RPZ4mEfTzrnr6QPt9"
+         target="_blank"
+         rel="noopener">Navigate</a>
+    </div>
+
+  </div>
+</section>
+
+
+.location-card iframe{
+    width:100%;
+    height:320px;
+    border:none;
+    border-radius:20px;
+    display:block;
+    overflow:hidden;
+    margin-bottom:16px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
+
 
 .button-row {
   display: flex;
